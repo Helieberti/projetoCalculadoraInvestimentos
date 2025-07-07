@@ -18,7 +18,7 @@
       <!-- Formulario -->
       <form class="w-full" id="investment-form">
         <!-- Div Investimento inicial -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="starting-amount" class="font-bold text-gray-700"
             >Investimento Inicial</label
           >
@@ -33,15 +33,17 @@
               type="text"
               class="w-5/6 bg-white border-l-1 rounded-r-lg px-2"
               id="starting-amount"
+              name="starting-amount"
               placeholder="0.00"
               required
             />
             <!-- <input type="text" class="w-1/3" value="mensal"> -->
           </div>
+          <!-- <p class="text-red-500">Insira um valor númerico e maior que zero</p> -->
         </div>
 
         <!-- Div Aportes Adicionais -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="additional-contribution" class="font-bold text-gray-700"
             >Aportes adicionais</label
           >
@@ -56,6 +58,7 @@
               type="text"
               class="w-5/6 bg-white border-l-1 rounded-r-lg px-2"
               id="additional-contribution"
+              name="additional-contribution"
               placeholder="0.00"
             />
             <!-- <input type="text" class="w-1/3" value="mensal"> -->
@@ -63,13 +66,14 @@
         </div>
 
         <!-- Div Prazo -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="time-amount" class="font-bold text-gray-700">Prazo</label>
           <div class="flex">
             <input
               type="text"
               class="w-2/3 bg-white rounded-l-lg px-2"
               id="time-amount"
+              name="time-amount"
               placeholder="0"
               required
             />
@@ -85,7 +89,7 @@
         </div>
 
         <!-- Div Rentabilidade -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="return-rate" class="font-bold text-gray-700"
             >Rentabilidade</label
           >
@@ -100,6 +104,7 @@
               type="text"
               class="w-1/2 bg-white px-2"
               id="return-rate"
+              name="return-rate"
               placeholder="0"
               required
             />
@@ -114,7 +119,7 @@
         </div>
 
         <!-- Div Impostos sobre lucro -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="tax-rate" class="font-bold text-gray-700"
             >Impostos sobre lucro</label
           >
@@ -129,6 +134,7 @@
               type="text"
               class="w-5/6 bg-white border-l-1 rounded-r-lg px-2"
               id="tax-rate"
+              name="tax-rate"
               placeholder="0"
               required
             />
@@ -137,6 +143,7 @@
         </div>
       </form>
 
+      <!-- Div botoes  -->
       <div class="flex h-12 px-6 my-8 w-full gap-2">
         <button
           id="calculate-results"
@@ -146,11 +153,12 @@
         >
           Calcular
         </button>
+
         <button
+          id="clear-form"
           class="w-1/2 rounded-lg hover:bg-emerald-500"
           style="cursor: pointer"
           type="submit"
-          
         >
           Limpar
         </button>
