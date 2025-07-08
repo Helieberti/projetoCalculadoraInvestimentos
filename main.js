@@ -17,7 +17,7 @@ function renderProgression(evt) {
   if (document.querySelector(".error")) {
     return;
   }
-  resetCharts()
+  resetCharts();
   const startingAmount = Number(
     document.getElementById("starting-amount").value.replace(",", ".")
   );
