@@ -165,8 +165,20 @@
       </div>
     </aside>
 
-    <main>
-      <p>Resultados</p>
+    <main class="h-full">
+      <section id="charts-container">
+        <!-- Div Resultado Final -->
+        <div class="h-[36dvh]">
+          <p>Resultado FInal</p>
+          <canvas id="final-money-distribution"></canvas>
+        </div>
+
+        <!-- Div Progressão -->
+        <div class="h-[56dvh]">
+          <p>Progressão</p>
+          <canvas id="progression"></canvas>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="./main.js"></script>
